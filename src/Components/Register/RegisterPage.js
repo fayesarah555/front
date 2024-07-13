@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Box,
   Button,
@@ -7,9 +7,9 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import "./style.css";
-import { Link } from "react-router-dom";
-const LoginPage = () => {
+import { Link } from 'react-router-dom';
+function RegisterPage() {
+  
   return (
     <div className="backGroundColor">
       <Container maxWidth={false}>
@@ -61,10 +61,22 @@ const LoginPage = () => {
               className="form-box"
             >
               <Typography variant="h3" gutterBottom>
-                Login
+                Register
               </Typography>
               <form noValidate autoComplete="off" padding={3}>
                 <TextField
+                  label="Nom"
+                  variant="outlined"
+                  fullWidth
+                  margin="normal"
+                />
+                  <TextField
+                  label="Email"
+                  variant="outlined"
+                  fullWidth
+                  margin="normal"
+                />
+                  <TextField
                   label="Email"
                   variant="outlined"
                   fullWidth
@@ -81,7 +93,7 @@ const LoginPage = () => {
                   Login
                 </Button>
                 <p>
-                  Don't have an account yet? <Link to="/register">Sign up</Link>
+                  You already have an account? <Link to="/Login">Sign in</Link>
                 </p>
               </form>
             </Box>
@@ -90,6 +102,6 @@ const LoginPage = () => {
       </Container>
     </div>
   );
-};
+}
 
-export default LoginPage;
+export default RegisterPage;
