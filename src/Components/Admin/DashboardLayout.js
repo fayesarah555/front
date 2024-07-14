@@ -18,7 +18,7 @@ const DashboardLayout = () => {
       >
         <Toolbar>
           <Typography variant="h6" noWrap component="div">
-            Dashboard
+            Dashboard ADMIN 
           </Typography>
         </Toolbar>
       </AppBar>
